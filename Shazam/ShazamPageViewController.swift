@@ -355,7 +355,6 @@ open class ShazamPageViewController: UIViewController, AMPageControllerDataSourc
         targetViewController.beginAppearanceTransition(true, animated: false)
         addChild(targetViewController)
         containView.addSubview(targetViewController.view)
-//        targetViewController.view.snp.makeConstraints({$0.edges.equalToSuperview()})
         targetViewController.view.translatesAutoresizingMaskIntoConstraints = false
         targetViewController.view.topAnchor.constraint(equalTo: containView.topAnchor).isActive = true
         targetViewController.view.leadingAnchor.constraint(equalTo: containView.leadingAnchor).isActive = true
